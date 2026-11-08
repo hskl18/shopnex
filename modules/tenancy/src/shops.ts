@@ -52,7 +52,14 @@ export async function updateShop(
   patch: Partial<
     Pick<
       schema.Shop,
-      'name' | 'currency' | 'storefrontUrl' | 'seoTitle' | 'seoDescription' | 'taxesIncluded' | 'taxShipping'
+      | 'name'
+      | 'currency'
+      | 'storefrontUrl'
+      | 'seoTitle'
+      | 'seoDescription'
+      | 'taxesIncluded'
+      | 'taxShipping'
+      | 'unpaidOrderExpiryHours'
     >
   >,
 ) {
